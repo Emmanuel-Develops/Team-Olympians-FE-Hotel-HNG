@@ -1,7 +1,7 @@
 # Olympians-Hotel-HNG
 
 
-# Home - Okiri gabriel
+# Home - Habeeb
 # Rooms/rates - Dreybest
 # Facilities - Lateefa
-# Contact - Habeeb
+# Contact - okiri gabriel and deifa
