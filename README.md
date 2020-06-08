@@ -17,3 +17,6 @@ Team Members
 - Haysquared
 - Coded
 
+Hotel-HNG figma link
+
+https://www.figma.com/file/ZaSri3SYkTZdtGyUJl1x80/Hotel-HNG
