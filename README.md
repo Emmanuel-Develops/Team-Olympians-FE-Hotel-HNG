@@ -1,7 +1,19 @@
 # Olympians-Hotel-HNG
 
 
-# Home - Habeeb
-# Rooms/rates - Dreybest
-# Facilities - Lateefa
-# Contact - okiri gabriel and deifa
+Team Members
+- Noel
+- Worldsalt3
+- Deifa
+- John Philip
+- chidie
+- Etiene
+- Dreybest
+- tayediggs
+- Latifa
+- deey
+- Hab-eeb
+- benjamin8
+- Haysquared
+- Coded
+
