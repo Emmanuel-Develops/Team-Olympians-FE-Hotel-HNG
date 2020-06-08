@@ -1,5 +1,95 @@
 * {
   box-sizing: border-box;
+}
+
+section.roomgrid {
+  background: red;
+  height: 594px;
+  display: grid;
+  grid-template-areas: "lg sm1 content" "lg sm2 content";
+  grid-gap: 30px;
+  grid-template-columns: 487px 269px 473px;
+}
+section.roomgrid .grid-1 {
+  grid-area: lg;
+  margin: 0;
+  border: 8px solid white;
+  box-shadow: 0px 0px 2px 2px #ccc;
+  width: 487px;
+  height: 580px;
+}
+section.roomgrid .grid-1 .lg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section.roomgrid .grid-1 .price {
+  position: relative;
+  padding-top: 5px;
+  display: block;
+  text-align: center;
+  background-color: white;
+  font-weight: 500;
+  line-height: 20px;
+  width: 116px;
+  bottom: 45px;
+}
+section.roomgrid .grid-2 {
+  grid-area: sm1;
+  margin: 0;
+  border: 8px solid white;
+  box-shadow: 0px 0px 2px 2px #ccc;
+  width: 269px;
+  height: 269px;
+}
+section.roomgrid .grid-2 .lg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section.roomgrid .grid-2 .price {
+  position: relative;
+  padding-top: 5px;
+  display: block;
+  text-align: center;
+  background-color: white;
+  font-weight: 500;
+  line-height: 20px;
+  width: 116px;
+  bottom: 45px;
+}
+section.roomgrid .grid-3 {
+  grid-area: sm2;
+  margin: 0;
+  border: 8px solid white;
+  box-shadow: 0px 0px 2px 2px #ccc;
+  width: 269px;
+  height: 269px;
+}
+section.roomgrid .grid-3 .lg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section.roomgrid .grid-3 .price {
+  position: relative;
+  padding-top: 5px;
+  display: block;
+  text-align: center;
+  background-color: white;
+  font-weight: 500;
+  line-height: 20px;
+  width: 116px;
+  bottom: 45px;
+}
+section.roomgrid .grid-4 {
+  width: 100%;
+  background: blue;
+  grid-area: content;
+}
+
+* {
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
