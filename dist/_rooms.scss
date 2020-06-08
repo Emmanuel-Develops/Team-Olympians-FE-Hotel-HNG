@@ -26,14 +26,16 @@
 
 section {
   &.roomgrid {
-    background: red;
-    height: 594px;
+    margin: auto;
+    // background: red;
+    width: 1300px;
+    height: auto;
     display: grid;
     grid-template-areas:
       "lg sm1 content"
       "lg sm2 content";
     grid-gap: 30px;
-    grid-template-columns: 487px 269px 473px;
+    grid-template-columns: 487px 269px 487px;
 
     .grid-1 {
       grid-area: lg;
@@ -55,8 +57,79 @@ section {
     }
     .grid-4 {
       width: 100%;
-      background: blue;
+      //   background: blue;
       grid-area: content;
+
+      .title-1 {
+        margin-top: 15px;
+        font-family: $mukta;
+        font-size: 30px;
+        line-height: 0.7;
+      }
+      .title-2 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1;
+      }
+      .content-body {
+        position: relative;
+        left: 20px;
+        margin-top: 25px;
+        font-size: 20px;
+        .star-filled {
+          margin: 0;
+          width: 20px;
+        }
+        .fa-star {
+          margin-right: 5px;
+          width: 20px;
+          color: #ffb74a;
+        }
+      }
+      .review {
+        background-color: $primary-color;
+        margin: 20px 0;
+        color: white;
+        font-size: 16px;
+        width: 165px;
+        padding: 5px 0;
+        text-align: center;
+      }
+      .quote {
+        p {
+          font-size: 13px;
+          text-align: justify;
+        }
+        .quote-author {
+          display: block;
+          text-align: right;
+        }
+      }
+      .oval-button-sec {
+        background: #ffedc0;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 5px 20px;
+        border-radius: 20px;
+        border: 4px solid white;
+        box-shadow: 0 0px 4px 0px #ddd;
+      }
+      .oval-button-pri {
+        display: block;
+        position: relative;
+        float: right;
+        top: 35px;
+        font-size: 24px;
+        font-weight: 500;
+        background: $primary-color;
+        color: white;
+        padding: 13px 20px;
+        border-radius: 30px;
+        box-shadow: 0 0px 4px 0px #ddd;
+        img {
+          width: 24px;
+        }
+      }
     }
   }
 }
