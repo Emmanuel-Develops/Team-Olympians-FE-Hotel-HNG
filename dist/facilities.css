@@ -31,6 +31,7 @@ nav ul {
   display: flex;
   list-style-type: none;
   padding: 0;
+  text-align: center;
 }
 nav ul li {
   list-style: none;
@@ -67,7 +68,7 @@ nav ul li a {
   margin-top: -50px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 750px) {
   div.fac-div {
     flex-wrap: wrap-reverse !important;
     justify-content: center;
@@ -88,7 +89,7 @@ nav ul li a {
     line-height: 3rem;
   }
   .footer-v2 {
-    margin-top: -50px;
+    margin-top: -40px;
   }
   footer {
     text-align: center;
