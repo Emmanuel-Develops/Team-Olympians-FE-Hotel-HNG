@@ -7,8 +7,6 @@ $dark-brown: #291811;
 $poppins: "Poppins", sans-serif;
 $mukta: "Mukta", sans-serif;
 
-=======
-
 @mixin current-nav($text-color, $text-background-color) {
   color: $text-color !important;
   background: $text-background-color;
@@ -18,4 +16,3 @@ $mukta: "Mukta", sans-serif;
   padding: 5px 20px;
   border-radius: 25px;
 }
-
