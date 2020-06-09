@@ -1,0 +1,183 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  background-color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .left-div {
+  background-color: navajowhite;
+  width: 50vw;
+  height: 90vh;
+  position: relative;
+}
+
+body .left-div .left-nav {
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: nill;
+      -ms-flex-pack: nill;
+          justify-content: nill;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .left-div .left-nav .logo {
+  padding-left: 50px;
+}
+
+body .left-div .main {
+  padding-left: 50px;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: nill;
+      -ms-flex-align: nill;
+          align-items: nill;
+}
+
+body .left-div .main .top h1 {
+  font-family: "PT Serif", serif;
+}
+
+body .left-div .main .search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .left-div .main .search-bar form {
+  padding: 5px 10px;
+  background-color: white;
+}
+
+body .left-div .main .search-bar form input {
+  border: none;
+  outline: none;
+}
+
+body .left-div .main .search-bar .btn {
+  border: none;
+  outline: none;
+  background-color: #331a00;
+  color: white;
+}
+
+body .right-div {
+  background-color: #331a00;
+  width: 50vw;
+  height: 90vh;
+  position: relative;
+}
+
+body .right-div .right-nav {
+  height: 15%;
+}
+
+body .right-div .right-nav .nav-list {
+  width: 90%;
+  padding: 22px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: nill;
+      -ms-flex-align: nill;
+          align-items: nill;
+}
+
+body .right-div .right-nav .nav-list a {
+  padding: 5px;
+  border-radius: 25px;
+  color: white;
+}
+
+body .right-div .right-nav .nav-list a:active {
+  background: white;
+  color: black;
+}
+
+body .hero-div {
+  height: 80vh;
+  width: 50vw;
+  border: 3px solid white;
+  position: absolute;
+  z-index: 99;
+  top: 15%;
+  right: 7%;
+}
+
+body .hero-div .fas {
+  font-size: 1.5em;
+  position: absolute;
+  z-index: 999;
+  color: white;
+}
+
+body .hero-div .left {
+  left: -2%;
+  top: 50%;
+}
+
+body .hero-div .right {
+  right: -2%;
+  top: 50%;
+}
+
+body .hero-div img {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}

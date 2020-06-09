@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  padding: 0;
+  background-color: aqua;
 }
 
 /*# sourceMappingURL=styles.css.map */
