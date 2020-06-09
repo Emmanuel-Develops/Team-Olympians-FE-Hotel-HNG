@@ -77,10 +77,6 @@ body .left-div .main {
           align-items: nill;
 }
 
-body .left-div .main .top h1 {
-  font-family: "PT Serif", serif;
-}
-
 body .left-div .main .search-bar {
   display: -webkit-box;
   display: -ms-flexbox;
