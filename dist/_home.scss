@@ -1,5 +1,3 @@
-////New text
-$pt-serif: 'PT Serif', serif;
 
 * {
     box-sizing: border-box;
@@ -46,11 +44,7 @@ $pt-serif: 'PT Serif', serif;
           height: 80%;
           @include flex(column, space-evenly, nill);
 
-          .top{
-              h1{
-                  font-family: $pt-serif;
-              }
-          }
+          
 
           .search-bar {
             display: flex;
