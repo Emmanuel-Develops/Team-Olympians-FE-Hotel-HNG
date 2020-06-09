@@ -44,7 +44,11 @@
           height: 80%;
           @include flex(column, space-evenly, nill);
 
-          
+          .top{
+              h1{
+                  font-family: $mukta;
+              }
+          }
 
           .search-bar {
             display: flex;
