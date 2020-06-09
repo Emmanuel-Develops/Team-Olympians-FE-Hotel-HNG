@@ -1,1 +1,133 @@
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+  
+  body {
+    background-color: lightgray;
+    @include flex(row, center, center);
+  
+    .left-div{
+      background-color: navajowhite;
+      width: 50vw;
+      height: 90vh;
+      position: relative;
+
+      .left-nav{
+        height: 15%;
+        @include flex(row, nill, center);
+
+        .logo{
+            padding-left: 50px;
+        }
+      }
+
+      .main{
+          padding-left: 50px;
+          height: 80%;
+          @include flex(column, space-evenly, nill);
+
+          .top{
+              h1{
+                  font-family: $mukta;
+              }
+          }
+
+          .search-bar {
+            display: flex;
+
+            form{
+                padding: 5px 10px;
+                background-color: white;
+  
+                input{
+                    border: none;
+                    outline: none;
+                }
+            }
+            .btn{
+                border: none;
+                outline: none;
+                background-color: #331a00;
+                color: white;
+            }
+          }
+          
+      }
+    }
+
+    .right-div{
+        background-color: #331a00;
+        width: 50vw;
+        height: 90vh;
+        position: relative;
+
+      .right-nav{
+          height: 15%;
+
+        .nav-list{
+            width: 90%;
+            padding: 22px 10px;
+            @include flex(row, space-evenly, nill);
+
+            a{
+                padding: 5px;
+                border-radius: 25px;
+                color: white;
+
+                &:active{
+                    background: white;
+                    color: black;
+                }
+            }
+        }
+      }
+    }
+
+    .hero-div {
+        height: 80vh;
+        width: 50vw;
+        border: 3px solid white;
+        position: absolute;
+        z-index: 99;
+        top: 15%;
+        right: 7%;
+
+        .fas{
+            font-size: 1.5em;
+            position: absolute;
+            z-index: 999;
+            color: white;
+        }
+        .left{
+            left: -2%;
+            top: 50%;
+        }
+        .right{
+            right: -2%;
+            top: 50%;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+  }

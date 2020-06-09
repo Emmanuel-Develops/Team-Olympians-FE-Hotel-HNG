@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,CAAC,CAAC;EACE,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CACzB;;AACD,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,GAAG;CACxB;;AFDD,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;EACtB,WAAW,ECFH,SAAS,EAAE,UAAU;CDG9B",
+    "sources": [
+        "../dist/styles.scss",
+        "../dist/_resource.scss",
+        "../dist/_home.scss",
+        "../dist/_rooms.scss",
+        "../dist/_facilities.scss",
+        "../dist/_contact.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}
