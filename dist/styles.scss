@@ -1,0 +1,10 @@
+@import "resource";
+@import "home";
+@import "rooms";
+@import "facilities";
+@import "contact";
+
+* {
+  box-sizing: border-box;
+  font-family: $poppins;
+}
