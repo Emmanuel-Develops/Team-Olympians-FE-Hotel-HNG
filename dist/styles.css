@@ -2,10 +2,23 @@
   box-sizing: border-box;
 }
 
+.background-split {
+  position: fixed;
+  margin: 0;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: #f8f8f8;
+  z-index: -2;
+}
+
 section.roomgrid {
-  margin: auto;
+  display: block;
+  margin: 30px 0;
+  padding: 0;
   width: 1300px;
-  height: auto;
+  max-height: 580px;
   display: grid;
   grid-template-areas: "lg sm1 content" "lg sm2 content";
   grid-gap: 30px;
@@ -85,6 +98,7 @@ section.roomgrid .grid-3 .price {
 }
 section.roomgrid .grid-4 {
   width: 100%;
+  max-height: 580px;
   grid-area: content;
 }
 section.roomgrid .grid-4 .title-1 {
@@ -100,7 +114,7 @@ section.roomgrid .grid-4 .title-2 {
 }
 section.roomgrid .grid-4 .content-body {
   position: relative;
-  left: 20px;
+  padding-left: 20px;
   margin-top: 25px;
   font-size: 20px;
 }

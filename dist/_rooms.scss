@@ -2,6 +2,18 @@
   box-sizing: border-box;
 }
 
+.background-split {
+  position: fixed;
+  margin: 0;
+  top: 0;
+  right: 0;
+  //   left: 50%;
+  width: 50%;
+  height: 100%;
+  background: #f8f8f8;
+  z-index: -2;
+}
+
 @mixin grid-image {
   margin: 0;
   border: 8px solid white;
@@ -25,11 +37,14 @@
 }
 
 section {
+  //   clear: both;
   &.roomgrid {
-    margin: auto;
+    display: block;
+    margin: 30px 0;
+    padding: 0;
     // background: red;
     width: 1300px;
-    height: auto;
+    max-height: 580px;
     display: grid;
     grid-template-areas:
       "lg sm1 content"
@@ -57,6 +72,7 @@ section {
     }
     .grid-4 {
       width: 100%;
+      max-height: 580px;
       //   background: blue;
       grid-area: content;
 
@@ -73,7 +89,7 @@ section {
       }
       .content-body {
         position: relative;
-        left: 20px;
+        padding-left: 20px;
         margin-top: 25px;
         font-size: 20px;
         .star-filled {
