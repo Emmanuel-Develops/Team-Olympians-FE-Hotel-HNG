@@ -7,7 +7,6 @@
   margin: 0;
   top: 0;
   right: 0;
-  //   left: 50%;
   width: 50%;
   height: 100%;
   background: #f8f8f8;
@@ -40,7 +39,7 @@ section {
   //   clear: both;
   &.roomgrid {
     display: block;
-    margin: 30px 0;
+    margin: 30px auto;
     padding: 0;
     // background: red;
     width: 1300px;
