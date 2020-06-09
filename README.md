@@ -17,6 +17,7 @@ Team Members
 - Haysquared
 - Coded
 - Maryam
+- Muhyideen
 
 Hotel-HNG figma link
 
