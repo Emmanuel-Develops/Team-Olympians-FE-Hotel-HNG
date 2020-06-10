@@ -14,7 +14,7 @@ a:hover {
 }
 
 body {
-  background-color: navajowhite;
+  background-color: #E5E5E5;
   /********** Section *******/
 }
 body section {
@@ -29,9 +29,11 @@ body section {
 }
 body section .left-div {
   background-color: navajowhite;
-  width: 50%;
-  height: 100%;
-  position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 80%;
 }
 body section .left-div .main {
   height: 100%;
@@ -142,7 +144,7 @@ body section .left-div .btn {
   top: 0;
   right: 0;
   width: 50%;
-  height: 100%;
+  height: 80%;
 }
 @media only screen and (max-width: 750px) {
   .right-div {
@@ -172,6 +174,7 @@ body section .left-div .btn {
   z-index: 999;
   color: #533427;
   border: 2px solid white;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.14);
   background: white;
   border-radius: 50%;
 }
@@ -206,6 +209,7 @@ body section .left-div .btn {
   padding: 10px;
   margin: 0 auto;
   margin-bottom: 50px;
+  z-index: 99;
 }
 
 nav {
