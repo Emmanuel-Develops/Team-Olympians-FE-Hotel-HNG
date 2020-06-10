@@ -1,3 +1,8 @@
+
+$chocolate: #331a00;
+$cream: navajowhite;
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -19,46 +24,113 @@ a {
   align-items: $align;
 }
 
-body {
-  background-color: lightgray;
-  @include flex(row, center, center);
 
-  .left-div {
-    background-color: navajowhite;
-    width: 50vw;
-    height: 90vh;
+@mixin mediaQuery {
+    @media only screen and (max-width: 470px) {
+        @content;
+    }
+}
+
+
+body{
+    background: grey;
+    @include flex(column, center, center);
+
+/********** Section *******/
+  section {
+    @include flex(row, nill, nill);
     position: relative;
-
-    .left-nav {
-      height: 15%;
-      @include flex(row, nill, center);
-
-      .logo {
-        padding-left: 50px;
-      }
+    height: 75vh;
+    width: 100%;
+    @include mediaQuery(){
+        //border: 2px solid green;
     }
 
-    .main {
-      padding-left: 50px;
-      height: 80%;
-      @include flex(column, space-evenly, nill);
+     /******** Left div *******/
+    .left-div{
+      background-color: $cream;
+      width: 50%;
+      height: 100%;
+      position: relative;
+     //border: 1px solid blue;
 
-      .top {
-        h1 {
-          font-family: $mukta;
-        }
-      }
+      .main{
+          height: 100%;
+          @include flex(column, space-evenly, center);
+          //border: 1px solid blue;
+          
+          @include mediaQuery {
+              width: 80vw;
+              margin: 0 auto;
+              z-index: 999;
+              position: absolute;
+              left: 10vw;
+              color: white;
+              text-align: center;
+              //border: 1px solid red;
+              color: red;
+              @include flex(column, space-evenly, center);
+          }
 
-      .search-bar {
-        display: flex;
+          .top{
+             //border: 1px solid red;
+              h1{
+                  font-family: $mukta;
+              }
+          }
 
-        form {
-          padding: 5px 10px;
-          background-color: white;
+          .search-bar {
+            display: flex;
+           // border: 1px solid green;
+            @include mediaQuery {
+                @include flex(column, center, center);
+            }
 
-          input {
-            border: none;
-            outline: none;
+            form{
+                @include flex(row, space-between, center);
+                width: 100%;
+               // border: 1px solid red;
+                @include mediaQuery {
+                    width: 100%;
+                    margin: 0 auto;
+                    padding: 5px 0;
+                    @include flex(column, space-between, center);
+                }
+  
+                .search{
+                    background: white;
+                    padding: 4px 2px;
+                    width: 69%;
+                    @include mediaQuery {
+                        @include flex(row, center, center);
+                        width: 100%;
+                        margin-bottom: 3px;
+                    }
+                    input{
+                        border: none;
+                        outline: none;
+                        width: 80%;
+                        @include mediaQuery {
+                            width: 80%;
+                        }
+                    }
+                }
+                .btn{
+                    border: none;
+                    outline: none;
+                    background-color: $chocolate;
+                    color: white;
+                    width: 30%;
+                    font-size: smaller;
+                    @include mediaQuery {
+                        width: 50%;
+                        background-color: gray;
+                        color: $chocolate;
+                    }
+                }
+            }
+            
+
           }
         }
         .btn {
@@ -71,66 +143,65 @@ body {
     }
   }
 
-  .right-div {
-    background-color: #331a00;
-    width: 50vw;
-    height: 90vh;
-    position: relative;
 
-    .right-nav {
-      height: 15%;
+    /*********** Right div **********/
+    .right-div{
+        background-color: $chocolate;
+        width: 50%;
+        height: 100%;
+        position: relative;
+        @include mediaQuery {
+            z-index: 1;
 
-      .nav-list {
-        width: 90%;
-        padding: 22px 10px;
-        @include flex(row, space-evenly, nill);
-
-        a {
-          padding: 5px 20px;
-          text-align: center;
-          border-radius: 25px;
-          color: white;
-
-          &:active {
-            background: white;
-            color: black;
-          }
         }
-      }
     }
   }
 
-  .hero-div {
-    height: 80vh;
-    width: 50vw;
-    border: 3px solid white;
-    position: absolute;
-    z-index: 99;
-    top: 15%;
-    right: 7%;
 
-    .fas {
-      font-size: 1.5em;
-      position: absolute;
-      z-index: 999;
-      color: white;
-    }
-    .left {
-      left: -2%;
-      top: 50%;
-    }
-    .right {
-      right: -2%;
-      top: 50%;
+    ///////// Hero div //////////
+    .hero-div {
+        height: 80%;
+        width: 50%;
+        //border: 3px solid white;
+        position: absolute;
+        z-index: 99;
+        top: 6%;
+        right: 8%;
+        
+        @include mediaQuery {
+            position: relative;
+            width: 100vw;
+            height: 70vh;
+           // border: 2px solid blue;
+        }
+
+        .fas{
+            font-size: 1.5em;
+            position: absolute;
+            z-index: 999;
+            color: white;
+            @include mediaQuery {
+                display: none;
+            }
+        }
+        .left{
+            left: -2%;
+            top: 50%;
+        }
+        .right{
+            right: -2%;
+            top: 50%;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            @include mediaQuery {
+                width: 100%;
+                ///margin: 0 auto;
+                //border: 1px solid red;
+            }
+        }
     }
 
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .current-nav {
-    @include current-nav($primary-color, white);
-  }
 }
