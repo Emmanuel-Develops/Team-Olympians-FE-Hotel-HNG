@@ -3,6 +3,14 @@
   font-family: "Poppins", sans-serif;
 }
 
+.background-split-1 {
+  position: fixed;
+  background: #f6f6f6;
+  height: 100vh;
+  width: 50%;
+  left: 50%;
+}
+
 section {
   position: relative;
 }
@@ -93,6 +101,10 @@ section.roomgrid .grid-4 {
   width: 100%;
   height: auto;
   grid-area: content;
+}
+section.roomgrid .grid-4 button:hover {
+  transform: scale(0.9);
+  transition: all ease-out 0.4s;
 }
 section.roomgrid .grid-4 .title-1 {
   margin-top: 15px;
@@ -213,45 +225,19 @@ nav ul li a {
   align-items: center;
 }
 
-.room-footer {
-  display: none;
+#contact-footer {
+  background: #ffedc0;
+  position: relative;
+  z-index: 20;
+  margin-top: 100px;
 }
 
-.footer-subscribe,
-.footer-location,
-.footer-time {
-  padding: 20px 0;
-  display: flex;
-  line-height: 1.3;
-  flex-direction: column;
-  width: 450px;
-  margin: auto;
-}
-
-.footer-subscribe p {
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-
-.footer-subscribe ::placeholder {
-  font-size: 16px;
-  color: rgba(0, 0, 0, 0.3);
-  opacity: 1;
-}
-
-.footer-subscribe input {
-  border: none;
-  box-sizing: border-box;
-  padding: 0 20px;
-  font-size: 18px;
-  font-weight: 400;
-  color: #ccc;
-}
-
-.footer-location img,
-.footer-time img {
-  width: 36px;
-  margin-bottom: 10px;
+header ul a:hover {
+  text-decoration: none;
+  padding: 5px 15px;
+  color: #533427;
+  border: 2px solid #533427;
+  border-radius: 30px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -305,12 +291,21 @@ section.roomgrid .grid-4 .content-body .oval-button-pri {
     border: none;
   }
 
-  .background-split-2 {
-    display: none;
+  #headphone_img {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .headphone p {
+    line-height: 0.5;
+  }
+
+  .headphone {
+    margin-bottom: 20px;
   }
 
   .background-split-1 {
-    width: 100%;
+    display: none;
   }
 }
 @media screen and (max-width: 750px) {
@@ -325,13 +320,14 @@ section.roomgrid .grid-4 .content-body .oval-button-pri {
   }
   section.roomgrid {
     margin-bottom: 50px;
-    max-width: 500px;
+    max-width: 400px;
     grid-template-areas: "lg lg" "sm1 sm2" "content content";
-    grid-template-columns: 235px 235px;
-    grid-template-rows: 470px 235px 1fr;
+    grid-template-columns: 193px 193px;
+    grid-template-rows: 400px 193px 1fr;
   }
   section.roomgrid .grid-1 {
-    height: 470px;
+    height: 400px;
+    width: 400px;
   }
   section.roomgrid .grid-4 .title-2,
 section.roomgrid .grid-4 .content-body {
@@ -350,7 +346,8 @@ section.roomgrid .grid-4 .content-body .oval-button-sec {
   }
   section.roomgrid .grid-4 .title-2 .oval-button-pri,
 section.roomgrid .grid-4 .content-body .oval-button-pri {
-    margin-left: 17%;
+    display: block;
+    margin-left: 0;
   }
 
   .background-split-2 {

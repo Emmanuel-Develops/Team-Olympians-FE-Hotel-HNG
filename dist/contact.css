@@ -3,6 +3,12 @@
   font-family: "Poppins", sans-serif;
 }
 
+a {
+  text-decoration: none !important;
+}
+a:hover {
+  text-decoration: none !important;
+}
 /*# sourceMappingURL=styles.css.map */
 
 .contact-image {
@@ -84,21 +90,20 @@ input {
   padding: 15px 15px;
   border-radius: 50px;
   text-transform: uppercase;
-  background: #836d0a;
-  color: #fff;
+  background: #533427;
+  color: white;
   line-height: normal;
   cursor: pointer;
   text-align: center;
   margin-left: 250px;
 }
 
-.a {
-  text-decoration: none !important;
-}
 .site-btn:hover {
-  border: 1px solid #836d0a;
-  color: #836d0a !important;
-  background: transparent;
+  transform: scale(0.9);
+  transition: all ease-out 0.3s;
+  border: 2px solid black;
+  color: white !important;
+  /* background: transparent; */
 }
 .btn-img {
   margin-left: 2px;
@@ -200,7 +205,7 @@ input {
     padding: 15px 15px;
     border-radius: 50px;
     text-transform: uppercase;
-    background: #836d0a;
+    background: #533427;
     color: #fff;
     line-height: normal;
     cursor: pointer;
@@ -238,9 +243,35 @@ nav ul li a {
   color: #533427;
 }
 
+#contact-footer {
+  background: #ffedc0;
+  position: relative;
+  z-index: 20;
+  margin-top: 100px;
+}
+
+header ul a:hover {
+  text-decoration: none;
+  padding: 5px 15px;
+  color: #533427;
+  border: 2px solid #533427;
+  border-radius: 30px;
+}
+
 @media only screen and (max-width: 750px) {
   .collapse-menu-v1 {
     text-align: center;
     line-height: 3rem;
+  }
+
+  #headphone_img {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .headphone p {
+    line-height: 0.5;
+  }
+  .headphone {
+    margin-bottom: 20px;
   }
 }

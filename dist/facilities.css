@@ -67,6 +67,14 @@ nav ul li a {
   margin-top: -50px;
 }
 
+header ul a:hover {
+  text-decoration: none;
+  padding: 5px 15px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+}
+
 @media only screen and (max-width: 750px) {
   div.fac-div {
     flex-wrap: wrap-reverse !important;
