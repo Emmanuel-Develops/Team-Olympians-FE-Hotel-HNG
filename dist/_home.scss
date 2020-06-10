@@ -1,26 +1,29 @@
+
 $chocolate: #331a00;
 $cream: navajowhite;
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  a{
-    color: black;
-    text-decoration: none;
 
-    &:hover{
-        text-decoration: none;
-    }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 @mixin flex($direction, $justify, $align) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }
+
 
 @mixin mediaQuery {
     @media only screen and (max-width: 470px) {
@@ -127,10 +130,19 @@ body{
                 }
             }
             
+
           }
-          
+        }
+        .btn {
+          border: none;
+          outline: none;
+          background-color: #331a00;
+          color: white;
+        }
       }
     }
+  }
+
 
     /*********** Right div **********/
     .right-div{
@@ -140,9 +152,11 @@ body{
         position: relative;
         @include mediaQuery {
             z-index: 1;
+
         }
     }
   }
+
 
     ///////// Hero div //////////
     .hero-div {
@@ -189,4 +203,5 @@ body{
             }
         }
     }
+
 }

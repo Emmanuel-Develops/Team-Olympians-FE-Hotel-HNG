@@ -16,8 +16,3 @@ Team Members
 - benjamin8
 - Haysquared
 - Coded
-- Maryam
-
-Hotel-HNG figma link
-
-https://www.figma.com/file/ZaSri3SYkTZdtGyUJl1x80/Hotel-HNG

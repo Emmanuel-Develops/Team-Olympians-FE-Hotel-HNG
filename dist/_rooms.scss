@@ -2,15 +2,22 @@
   box-sizing: border-box;
 }
 
-.background-split {
+.background-split-1,
+.background-split-2 {
   position: fixed;
   margin: 0;
   top: 0;
-  right: 0;
   width: 50%;
   height: 100%;
-  background: #f8f8f8;
   z-index: -2;
+}
+.background-split-1 {
+  right: 0;
+  background: #f8f8f8;
+}
+.background-split-2 {
+  left: 0;
+  background: white;
 }
 
 @mixin grid-image {
@@ -36,9 +43,10 @@
 }
 
 section {
+  position: relative;
+  top: 100px;
   //   clear: both;
   &.roomgrid {
-    display: block;
     margin: 30px auto;
     padding: 0;
     // background: red;
@@ -148,3 +156,31 @@ section {
     }
   }
 }
+
+header {
+  &.room-header {
+    display: block;
+    position: absolute;
+    top: 0;
+    margin: 50px 0;
+    width: 1300px;
+    z-index: 10;
+    .left-nav {
+      position: absolute;
+      left: 0;
+    }
+    .right-nav {
+      position: absolute;
+      right: 0;
+      a {
+        margin: 0 20px;
+      }
+
+      .current-nav {
+        @include current-nav(white, $primary-color);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px;);
