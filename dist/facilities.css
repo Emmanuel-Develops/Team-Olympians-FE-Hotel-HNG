@@ -31,6 +31,7 @@ nav ul {
   display: flex;
   list-style-type: none;
   padding: 0;
+  text-align: center;
 }
 nav ul li {
   list-style: none;
@@ -67,7 +68,7 @@ nav ul li a {
   margin-top: -50px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 750px) {
   div.fac-div {
     flex-wrap: wrap-reverse !important;
     justify-content: center;
@@ -79,7 +80,7 @@ nav ul li a {
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 37px;
     letter-spacing: 0.02em;
   }
