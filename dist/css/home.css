@@ -118,7 +118,7 @@ body section .left-div .main .search-bar form .search input {
 body section .left-div .main .search-bar form .btn {
   border: none;
   outline: none;
-  background-color: #331a00;
+  background-color: #533427;
   color: white;
   width: 30%;
   font-size: smaller;
@@ -127,19 +127,19 @@ body section .left-div .main .search-bar form .btn {
   body section .left-div .main .search-bar form .btn {
     width: 50%;
     background-color: gray;
-    color: #331a00;
+    color: #533427;
   }
 }
 body section .left-div .btn {
   border: none;
   outline: none;
-  background-color: #331a00;
+  background-color: #533427;
   color: white;
 }
 
 /*********** Right div **********/
 .right-div {
-  background-color: #331a00;
+  background-color: #533427;
   position: fixed;
   top: 0;
   right: 0;
