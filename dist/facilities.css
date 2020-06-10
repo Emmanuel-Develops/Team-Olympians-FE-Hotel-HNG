@@ -36,6 +36,7 @@ nav ul li {
   margin-left: 30px;
 }
 nav ul li a {
+  font-size: 16px;
   text-decoration: none;
   color: #fff;
 }
