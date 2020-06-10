@@ -163,13 +163,17 @@ body section .left-div .btn {
     position: relative;
     width: 100vw;
     height: 70vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
   }
 }
 .hero-div .fas {
   font-size: 1.5em;
   position: absolute;
   z-index: 999;
-  color: white;
+  color: #533427;
+  border: 2px solid white;
+  background: white;
+  border-radius: 50%;
 }
 @media only screen and (max-width: 750px) {
   .hero-div .fas {
