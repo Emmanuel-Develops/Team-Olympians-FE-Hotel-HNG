@@ -5,8 +5,6 @@ Team Members
 - Noel
 - Worldsalt3
 - Deifa
-- John Philip
-- chidie
 - Etiene
 - Dreybest
 - tayediggs
@@ -16,3 +14,10 @@ Team Members
 - benjamin8
 - Haysquared
 - Coded
+- Muhyideen
+- Promcode
+- Simi
+- Enkay
+- Adeinfo
+- BigBello
+- Realadebimpe
