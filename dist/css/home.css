@@ -14,7 +14,7 @@ a:hover {
 }
 
 body {
-  background-color: #E5E5E5;
+  background-color: navajowhite;
   /********** Section *******/
 }
 body section {
@@ -28,12 +28,10 @@ body section {
   /******** Left div *******/
 }
 body section .left-div {
-  background-color:#FFF3D6;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 80%;
+  background-color: navajowhite;
+  width: 50%;
+  height: 100%;
+  position: relative;
 }
 body section .left-div .main {
   height: 100%;
@@ -118,7 +116,7 @@ body section .left-div .main .search-bar form .search input {
 body section .left-div .main .search-bar form .btn {
   border: none;
   outline: none;
-  background-color: #533427;
+  background-color: #331a00;
   color: white;
   width: 30%;
   font-size: smaller;
@@ -127,24 +125,24 @@ body section .left-div .main .search-bar form .btn {
   body section .left-div .main .search-bar form .btn {
     width: 50%;
     background-color: gray;
-    color: #533427;
+    color: #331a00;
   }
 }
 body section .left-div .btn {
   border: none;
   outline: none;
-  background-color: #533427;
+  background-color: #331a00;
   color: white;
 }
 
 /*********** Right div **********/
 .right-div {
-  background-color: #533427;
+  background-color: #331a00;
   position: fixed;
   top: 0;
   right: 0;
   width: 50%;
-  height: 80%;
+  height: 100%;
 }
 @media only screen and (max-width: 750px) {
   .right-div {
@@ -165,18 +163,13 @@ body section .left-div .btn {
     position: relative;
     width: 100vw;
     height: 70vh;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
   }
 }
 .hero-div .fas {
   font-size: 1.5em;
   position: absolute;
   z-index: 999;
-  color: #533427;
-  border: 2px solid white;
-  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.14);
-  background: white;
-  border-radius: 50%;
+  color: white;
 }
 @media only screen and (max-width: 750px) {
   .hero-div .fas {
@@ -194,7 +187,6 @@ body section .left-div .btn {
 .hero-div img {
   width: 100%;
   height: 100%;
-  border: 8px solid #FFFFFF;
 }
 @media only screen and (max-width: 750px) {
   .hero-div img {
@@ -209,7 +201,6 @@ body section .left-div .btn {
   padding: 10px;
   margin: 0 auto;
   margin-bottom: 50px;
-  z-index: 99;
 }
 
 nav {
