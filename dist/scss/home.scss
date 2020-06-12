@@ -42,6 +42,7 @@ a {
 
 ///////////Body start ////////////
 body {
+
   background-color: $pink;
   @include flex(column, center, center);
   overflow-y: hidden;
@@ -53,6 +54,7 @@ body {
     overflow-y: initial;
   }
   
+
   /********** Section *******/
   section {
     @include flex(row, nill, nill);
@@ -66,10 +68,10 @@ body {
 
     /******** Left div *******/
     .left-div {
-      background-color: $cream;
       width: 50%;
       height: 100%;
       position: relative;
+
       //border: 1px solid blue;
       @include mediaQuery(){
         width: 100%;
@@ -81,7 +83,9 @@ body {
         @include flex(column, space-evenly, center);
         //border: 3px solid blue;
 
+
         @include mediaQuery {
+          padding-left: 0;
           width: 80vw;
           margin: 0 auto;
           z-index: 999;
@@ -99,7 +103,9 @@ body {
           align-self: flex-start;
           padding-left: 5px;
           //border: 1px solid red;
+
           @include flex(column, center, center);
+
         }
 
         .search-bar {
@@ -181,6 +187,7 @@ body {
 
     /*********** Right div **********/
 .right-div {
+
   background-color: $chocolate;
   position: relative;
   width: 50%;
@@ -188,6 +195,7 @@ body {
   @include mediaQuery {
     display: none;
   }
+
   }
 }   ////End of section///////
 
