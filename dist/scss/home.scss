@@ -9,6 +9,9 @@ $mukta: "Mukta", sans-serif;
 $chocolate: #331a00;
 $cream: navajowhite;
 
+$pink: pink;
+$tomato: tomato;
+
 * {
   box-sizing: border-box;
   font-family: $poppins;
@@ -32,19 +35,31 @@ a {
 }
 
 @mixin mediaQuery {
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 470px) {
     @content;
   }
 }
 
+///////////Body start ////////////
 body {
-  background-color: $cream;
+  background-color: $pink;
+  @include flex(column, center, center);
+  overflow-y: hidden;
+  @include mediaQuery(){
+    @include flex(column, center, center);
+    overflow-x: hidden;
+    background-color: $cream;
+    //overflow-y: visible;
+    overflow-y: initial;
+  }
+  
   /********** Section *******/
   section {
     @include flex(row, nill, nill);
     position: relative;
-    height: 75vh;
-    width: 100%;
+    height: 86vh;
+    width: 100vw;
+    //border: 3px solid blue;
     @include mediaQuery() {
       //border: 2px solid green;
     }
@@ -56,11 +71,15 @@ body {
       height: 100%;
       position: relative;
       //border: 1px solid blue;
+      @include mediaQuery(){
+        width: 100%;
+        padding: 0;
+      }
 
       .main {
         height: 100%;
         @include flex(column, space-evenly, center);
-        //border: 1px solid blue;
+        //border: 3px solid blue;
 
         @include mediaQuery {
           width: 80vw;
@@ -76,59 +95,77 @@ body {
         }
 
         .top {
+          flex: 1 1 auto;
+          align-self: flex-start;
+          padding-left: 5px;
           //border: 1px solid red;
-          h1 {
-            font-family: $mukta;
-          }
+          @include flex(column, center, center);
         }
 
         .search-bar {
-          display: flex;
-          // border: 1px solid green;
+          flex: 3 1 auto;
+          width: 60%;
+          border: 1px solid white;
+          @include flex(column, center, center);
           @include mediaQuery {
-            @include flex(column, center, center);
+            width: 80%;
+            border: none;
           }
 
           form {
-            @include flex(row, space-between, center);
-            width: 100%;
-            // border: 1px solid red;
+            @include flex(column, space-between, center);
+            width: 80%;
+            height: 90%;
+            margin: 0 auto;
+            //border: 1px solid red;
             @include mediaQuery {
-              width: 100%;
-              margin: 0 auto;
-              padding: 5px 0;
-              @include flex(column, space-between, center);
+              width: 90%;
             }
 
             .search {
-              background: white;
-              padding: 4px 2px;
-              width: 69%;
+              background: grey;
+              border-radius: 10px;
+              padding: 5px;
+              width: 100%;
+              height: 80%;
+              @include flex(column, space-evenly, center);
               @include mediaQuery {
-                @include flex(row, center, center);
-                width: 100%;
-                margin-bottom: 3px;
+                
               }
-              input {
-                border: none;
-                outline: none;
-                width: 80%;
-                @include mediaQuery {
-                  width: 80%;
+              .input-box{
+                @include flex(row, space-between, center);
+                //border: 1px solid blue;
+                width: 90%;
+                .label{
+                  width: 50%;
+                  align-self: center;
+                  //border: 1px solid red;
+                }
+                .value {
+                  width: 45%;
+                  color: black;
+                }
+                i {
+                  cursor: pointer;
                 }
               }
+              .person{
+                width: 70%;
+              }
             }
+
             .btn {
               border: none;
               outline: none;
               background-color: $chocolate;
               color: white;
-              width: 30%;
+              width: 75%;
+              height: 12%;
               font-size: smaller;
               @include mediaQuery {
-                width: 50%;
-                background-color: gray;
-                color: $chocolate;
+                width: 90%;
+                background-color: $chocolate;
+                color: yellow;
               }
             }
           }
@@ -141,87 +178,123 @@ body {
         color: white;
       }
     }
-  }
-}
 
-/*********** Right div **********/
+    /*********** Right div **********/
 .right-div {
   background-color: $chocolate;
-  position: fixed;
-  top: 0;
-  right: 0;
+  position: relative;
   width: 50%;
   height: 100%;
   @include mediaQuery {
     display: none;
   }
-}
-
-///////// Hero div //////////
-.hero-div {
-  height: 80%;
-  width: 50%;
-  //border: 3px solid white;
-  position: absolute;
-  z-index: 99;
-  top: 100px;
-  right: 8%;
-
-  @include mediaQuery {
-    position: relative;
-    width: 100vw;
-    height: 70vh;
-    // border: 2px solid blue;
   }
+}   ////End of section///////
 
-  .fas {
-    font-size: 1.5em;
+    ///////// Hero div //////////
+  .hero-div {
+    height: 60%;
+    width: 50%;
     position: absolute;
-    z-index: 999;
-    color: white;
-    @include mediaQuery {
-      display: none;
-    }
-  }
-  .left {
-    left: -2%;
-    top: 50%;
-  }
-  .right {
-    right: -2%;
-    top: 50%;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    @include mediaQuery {
+    top: 20%;
+    right: 8%;
+    border: 3px solid white;
+    z-index: 99;
+    //display: none;
+    //
+    @include mediaQuery(){
+      position: relative;
       width: 100%;
-      ///margin: 0 auto;
-      //border: 1px solid red;
+      top: 0;
+      right: 0;
+      border: 2px solid $chocolate;
     }
+
+    .carousel {
+      //border: 3px solid red;
+      height: 100%;
+      .carousel-inner{
+        height: 100%;
+        .carousel-item{
+          height: 100%;
+          .image{
+            height: 100%;
+            //border: 2px solid blue;
+          }
+        }
+      }
+    }
+
+    .image{
+      //width: 100%;
+      height: 100%;
+    }
+
+    .fas {
+      font-size: 1.5em;
+      position: absolute;
+      z-index: 999;
+      color: white;
+      @include mediaQuery {
+        display: none;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      @include mediaQuery {
+        width: 100%;
+        ///margin: 0 auto;
+        //border: 1px solid red;
+      }
+    }
+  }
+} //////////Body end //////////////
+
+///////// Header ////////////
+
+.navbar{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: $cream;
+  width: 100vw;
+ // border-bottom: 2px solid red;
+  @include mediaQuery(){
+    padding: 10px 15px;
   }
 }
 
-.wrapper {
-  position: relative;
-  max-width: 100%;
-  width: 100%;
-  padding: 10px;
-  margin: 0 auto;
-  margin-bottom: 50px;
+.navbar-brand{
+  padding-left: 5px;
+  @include mediaQuery(){
+    
+  }
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  //border: 1px solid red;
+  height: 100%;
+  padding: 0;
 }
+
 nav ul {
   display: flex;
   list-style-type: none;
-  padding: 0;
+  padding: 21px 0;
+  background-color: $chocolate;
   text-align: center;
+  //border: 1px solid blue;
+  width: 59.3%;
+  height: 100%;
+
+  @include mediaQuery(){
+    background-color: $cream;
+  }
 }
 nav ul li {
   list-style: none;
@@ -241,3 +314,4 @@ header ul a:hover {
   border: 2px solid white;
   border-radius: 30px;
 }
+
