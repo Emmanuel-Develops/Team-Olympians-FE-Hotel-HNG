@@ -145,7 +145,6 @@ input {
     justify-content: center;
     max-width: 100%;
     height: auto;
-    margin-bottom: 80px;
   }
   .contact-image {
     justify-self: center;
@@ -154,13 +153,13 @@ input {
     margin: 0;
   }
 
-  .contact form{
+  .contact form {
     text-align: left;
     /* border: 2px solid black; */
     margin: auto;
     width: 70%;
   }
-  .contact form label{
+  .contact form label {
     text-align: left;
     /* border: 2px solid black; */
     margin: auto;
