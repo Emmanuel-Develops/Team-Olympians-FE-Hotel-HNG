@@ -19,7 +19,7 @@ body {
 }
 @media only screen and (max-width: 750px) {
   body {
-    background: url("/Resources/Rooms & rates/room_1.jpg");
+    background: url("../../Resources/Rooms & rates/room_1.jpg");
     background-size: cover;
     background-attachment: fixed;
   }
@@ -169,7 +169,7 @@ body section .left-div .btn {
 
 /*********** Right div **********/
 .right-div {
-  background: url("/Resources/Rooms & rates/room_6.jpg");
+  background: url("../../Resources/Rooms & rates/room_6.jpg");
   position: fixed;
   background-size: cover;
   background-position: fixed;
